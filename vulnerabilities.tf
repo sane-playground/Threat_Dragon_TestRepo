@@ -28,7 +28,7 @@ resource "aws_security_group" "insecure_sg" {
   }
 }
 
-# EC2 instance without encryption on root volume (Vulnerability: Unencrypted EBS volume)
+# EC2 instance without the encryption on root volume (Vulnerability: Unencrypted EBS volume)
 resource "aws_instance" "unencrypted_instance" {
   ami           = "ami-0c55b159cbfafe1f0"
   instance_type = "t2.micro"
